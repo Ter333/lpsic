@@ -24,7 +24,7 @@ if (isset($_POST['valider']) && $_POST['valider'] === 'connexion') {
         $_SESSION['role'] = $user['role'];
         
         // Redirection vers la page d'accueil après une courte pause pour afficher les données
-        header("Location: accueil.php");
+        header("Location: index.php");
     } else {
         $error = "Email ou mot de passe incorrect.";
     }
