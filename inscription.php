@@ -44,7 +44,7 @@ if (isset($valider)) {
             $_SESSION['role'] = $role;
             $_SESSION['email'] = $email;
 
-            header('Location: accueil.php');
+            header('Location: index.php');
         } catch (Exception $e) {
             echo "Erreur : " . $e->getMessage();
         }
